@@ -72,17 +72,36 @@ function calculateBmi(weight, height) {
   }
 }
 
-console.log(calculateBmi(100,188))
-
+console.log(calculateBmi(100, 188));
 
 // 5.Create a function that checks if a year is a leap year.
 
-function isKabiseYear(year){
-  if ((year % 4 === 0 && year % 100 !== 0 ) || (year % 400 === 0)) {
+function isKabiseYear(year) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
     return true; // کبیسه است
-  } else{
+  } else {
     return false;
   }
 }
 
-console.log(isKabiseYear(1404))
+console.log(isKabiseYear(1404));
+
+// Write a JavaScript function that determines if a given string contains any vowels (a, e, i, o, u). Return true if it does and false otherwise, considering both uppercase and lowercase letters.
+
+function containsVowel(str) {
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i].toLowerCase();
+    if (
+      (char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+console.log(containsVowel("ali"));
+console.log(containsVowel("QQWWCC"));
+
+// 
