@@ -17,7 +17,7 @@ console.log(isPrime(7))
 // new ==> Math.sqrt()
 
 
-// Create a function that converts time from 24-hour format to 12-hour format.
+// 2.Create a function that converts time from 24-hour format to 12-hour format.
 
 function convert24to12(time){
   let parts = time.split(':');
@@ -38,4 +38,16 @@ console.log(convert24to12("13:43"))
 
 // new ==> split , parseInt
 
+
+// 3.Write a function that checks if a number is within a specified range.
+
+function isInRange(number,min,max){
+  if(number <= max && number >= min){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log(test(12,10,11))
 
