@@ -73,3 +73,16 @@ function calculateBmi(weight, height) {
 }
 
 console.log(calculateBmi(100,188))
+
+
+// 5.Create a function that checks if a year is a leap year.
+
+function isKabiseYear(year){
+  if ((year % 4 === 0 && year % 100 !== 0 ) || (year % 400 === 0)) {
+    return true; // کبیسه است
+  } else{
+    return false;
+  }
+}
+
+console.log(isKabiseYear(1404))
