@@ -104,7 +104,9 @@ function containsVowel(str) {
 console.log(containsVowel("ali"));
 console.log(containsVowel("QQWWCC"));
 
-// 6.Create a function called findMinimum that takes an array of numbers as input and returns the smallest number in the array.
+
+
+// 7.Create a function called findMinimum that takes an array of numbers as input and returns the smallest number in the array.
 
 function findMinimum(arr){
   let min = arr[0];
@@ -117,8 +119,15 @@ function findMinimum(arr){
   return min;
 }
  
-console.log(findMinimum([40,30,5,8]))
+console.log(findMinimum([40,30,5,8]));
+
+// 8.Create a function that reverses a given string. For example, if the input is "hello," the output should be “olleh.”
+
+function reverseString(str) {
+  return str.split("").reverse().join("")
+}
+
+console.log(reverseString("ali"))
 
 
-
-
+// new ==> join
