@@ -86,7 +86,7 @@ function isKabiseYear(year) {
 
 console.log(isKabiseYear(1404));
 
-// Write a JavaScript function that determines if a given string contains any vowels (a, e, i, o, u). Return true if it does and false otherwise, considering both uppercase and lowercase letters.
+// 6.Write a JavaScript function that determines if a given string contains any vowels (a, e, i, o, u). Return true if it does and false otherwise, considering both uppercase and lowercase letters.
 
 function containsVowel(str) {
   for (let i = 0; i < str.length; i++) {
@@ -104,4 +104,21 @@ function containsVowel(str) {
 console.log(containsVowel("ali"));
 console.log(containsVowel("QQWWCC"));
 
-// 
+// 6.Create a function called findMinimum that takes an array of numbers as input and returns the smallest number in the array.
+
+function findMinimum(arr){
+  let min = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+ 
+console.log(findMinimum([40,30,5,8]))
+
+
+
+
